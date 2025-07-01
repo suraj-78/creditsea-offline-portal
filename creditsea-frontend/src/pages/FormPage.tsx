@@ -1,10 +1,27 @@
 import { useState } from "react";
 import { trackEvent } from "../utils/eventTracker";
+import { useEffect } from "react";
+
+
 import Navbar from "../components/Navbar";
 
 
 function FormPage() {
   const [name, setName] = useState("");
+
+  // Load saved input on mount
+  useEffect(() => {
+  const savedName = localStorage.getItem("form_name");
+  if (savedName) {
+    setName(savedName);
+  }
+}, []);
+
+// Save input to localStorage on change
+  useEffect(() => {
+  localStorage.setItem("form_name", name);
+}, [name]);
+
 
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -23,6 +40,8 @@ function FormPage() {
     trackEvent(event);
     alert("Form submitted!");
     setName("");
+    localStorage.removeItem("form_name"); // ← add this
+
   }
 
   return (
