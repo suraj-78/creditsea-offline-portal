@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import app from "./app";
 
 const PORT = process.env.PORT || 5000;
-const MONGO_URL = process.env.MONGO_URI || "";
+const MONGO_URL = process.env.MONGO_URL || "";
 
 // async function connectToDatabase() {
 //   await mongoose.connect(MONGO_URI);
