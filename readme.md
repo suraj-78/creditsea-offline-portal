@@ -1,7 +1,6 @@
 # CreditSea Offline-First User Journey & Analytics Portal
 
-A full-stack project built for the CreditSea Full Stack Intern Challenge.  
-It tracks user activity across multiple pages — including form interactions — even while offline, and syncs data to the backend once reconnected.
+A full-stack project that tracks user activity across multiple pages — including form interactions — even while offline, and syncs data to the backend once reconnected.
 
 ---
 
