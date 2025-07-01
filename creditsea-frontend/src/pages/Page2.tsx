@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { trackEvent } from "../utils/eventTracker";
+import Navbar from "../components/Navbar";
 
 function Page2() {
   // Track page view when user visits Page 2
@@ -32,6 +33,7 @@ function Page2() {
 
   return (
     <div>
+      <Navbar />
       <h1>This is Page 2</h1>
       <button onClick={handleClick}>Click Me</button>
     </div>

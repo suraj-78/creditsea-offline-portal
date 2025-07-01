@@ -1,6 +1,10 @@
 import { useEffect } from "react";
 import { trackEvent } from "../utils/eventTracker";
 
+import Navbar from "../components/Navbar";
+
+
+
 function Page1() {
   // track when the page loads
   useEffect(() => {
@@ -32,6 +36,7 @@ function Page1() {
 
   return (
     <div>
+      <Navbar />
       <h1>This is Page 1</h1>
       <button onClick={handleClick}>Click Me</button>
     </div>
