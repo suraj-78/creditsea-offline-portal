@@ -2,6 +2,7 @@ import { useState } from "react";
 import { trackEvent } from "../utils/eventTracker";
 import Navbar from "../components/Navbar";
 
+
 function FormPage() {
   const [name, setName] = useState("");
 

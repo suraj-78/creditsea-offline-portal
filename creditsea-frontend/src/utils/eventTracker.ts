@@ -1,5 +1,11 @@
 import axios from "axios";
 
+function hasUnsyncedEvents(): boolean {
+  const events = localStorage.getItem("offline_events");
+  return events !== null && events.length > 2; // must have something meaningful
+}
+
+
 // savint event to localStorage
 function saveEventOffline(event: any) {
   let stored = localStorage.getItem("offline_events");
@@ -45,4 +51,4 @@ function trackEvent(event: any) {
   }
 }
 
-export {saveEventOffline, syncOfflineEvents, trackEvent}
+export {saveEventOffline, syncOfflineEvents, trackEvent, hasUnsyncedEvents}
