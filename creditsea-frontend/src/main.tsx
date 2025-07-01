@@ -6,7 +6,7 @@ import { syncOfflineEvents } from "./utils/eventTracker";
 
 // When browser comes online again, try syncing
 window.addEventListener("online", () => {
-  console.log("🔌 You are online. Trying to sync...");
+  console.log("You are online now. Trying to sync the data...");
   syncOfflineEvents();
 });
 

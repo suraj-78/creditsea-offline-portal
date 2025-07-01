@@ -34,7 +34,7 @@ function AdminDashboard() {
 
   return (
     <div style={{ padding: "20px" }}>
-      <h2>📊 Admin Analytics Dashboard</h2>
+      <h2> Admin Analytics Dashboard</h2>
 
       <h3>Summary:</h3>
       <ul>
