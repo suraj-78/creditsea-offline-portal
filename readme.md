@@ -41,6 +41,23 @@ It tracks user activity across multiple pages — including form interactions �
 
 ---
 
+## Screenshots
+
+### 🧳 **Home Page**
+![Home Page](https://github.com/suraj-78/creditsea-offline-portal/blob/main/Screenshot%20(23).png)
+
+### 🧳 **Admin Dashboard**
+![Admin Dashboard](https://github.com/suraj-78/creditsea-offline-portal/blob/main/Screenshot%20(25).png)
+
+### 🧳 **Form Page**
+![Form Page](https://github.com/suraj-78/creditsea-offline-portal/blob/main/Screenshot%20(24).png)
+
+### 🧳 **Console Page**
+![Console Page](https://github.com/suraj-78/creditsea-offline-portal/blob/main/Screenshot%202025-07-01%20200822.png)
+
+---
+
+
 ## How to Run the Project Locally
 
 Make sure Node.js and npm are installed.
@@ -51,16 +68,32 @@ Make sure Node.js and npm are installed.
 git clone https://github.com/suraj-78/creditsea-offline-portal.git
 cd creditsea-offline-portal
 
-
-
+```
 ### 2. Install Dependencies
 
 ```bash
 npm install
 
-
+```
 ### 3. Create .env file in /creditsea-backend
 PORT=5000
 MONGO_URI=mongodb+srv://<username>:<password>@cluster0.mongodb.net/creditsea?retryWrites=true&w=majority
-Replace <username> and <password> with your MongoDB Atlas credentials.
+
+    Replace <username> and <password> with your MongoDB Atlas credentials.
+
+### 4. Run the Backend Server
+```bash
+cd creditsea-backend
+npm run start
+```
+
+### 5. Run the Frontend
+```bash
+cd creditsea-frontend
+npm run dev
+
+```
+
+---
+
 
